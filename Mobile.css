@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 60px 15px 60px;
+    background-color: rgb(249, 247, 247);
+    column-gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar {
+    position: fixed;
+    list-style: none;
+    width: 250px;
+    row-gap: 30px;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 0 20px rgb(48, 48, 48);
+    backdrop-filter: blur(8px);
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.066);
+    font-size: 18px;
+    align-items: self-start;
+    padding: 40px;
+}
+.midbar {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    list-style: none;
+}
+
+.midli {
+    flex-shrink: 0;
+    font-weight: 500;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+.button {
+    display: flex;
+}
+.button:hover{
+    background-color: #b9ff66;
+}
+
+.btn {
+    padding: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+
+@media (max-width:400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width:900px) {
+    nav {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 60px 10px 60px;
+        background-color: rgb(249, 247, 247);
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: auto;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .layout ul {
+        display: none;
+    }
+}
+
+.main {
+    padding: 0 60px 0 60px;
+    font-size: x-large
+}
+
+.mobile {
+    display: flex;
+    padding: 30px 60px;
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content p strong {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.mobile-btn button {
+    width: 220px;
+    padding: 15px 50px 15px 50px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.mobile-btn2 button {
+    border: 1px solid black;
+    width: 220px;
+    padding: 15px 50px 15px 50px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+hr {
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+
+.mobile-text p {
+    font-weight: 650;
+    row-gap: 5px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.mobile1,
+.mobile2,
+.mobile3 {
+    border: 1px solid black;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 100px) {
+    .mobile {
+        row-gap: 40px;
+    }
+
+}
+.question h1 {
+    padding: 30px 60px 30px 60px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 30px 40px;
+    row-gap: 40px;
+}
+
+.box {
+    background-color: #b9ff66;
+    color: black;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px;
+
+}
+
+.content-box-inline {
+    display: flex;
+    flex-direction: row;
+}
+.content-plus-img , .content-minus-img{
+width: 20px;
+     height: 20px;
+      cursor: pointer;
+      display: none;
+}
+
+.minusimg , .plusimg{
+    display: flex;
+    width: 20px;
+     height: 20px;
+      cursor: pointer;
+}
+
+.test1 h2 {
+    margin-bottom: 30px;
+}
+
+.hr1 {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.box2 {
+    display: flex
+}
+
+.textbox {
+    border: 1px solid black;
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test1 {
+    flex: 1 1 80%;
+    width: 90%;
+}
+.text-area{
+    display: flex;
+}
+#main-text {
+    padding: 20px;
+    width: 650px;
+    height: 150px;
+    border-radius: 15px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+    flex-shrink: 1;
+    display: none;
+}
+
+
+
+
+
+@media (max-width:1200px) {
+    .content {
+        font-size: 13px;
+    }
+
+    .box2 {
+        font-size: 11px;
+    }
+}
+
+@media (max-width:975px) {
+    .content {
+        font-size: 11px;
+    }
+
+    .box2 {
+        font-size: 8px;
+    }
+}
